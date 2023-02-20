@@ -23,11 +23,11 @@ class ViewController: UIViewController {
 
     @IBAction func datePicker(_ sender: UIDatePicker) {
         let range = sender.date..<Date.now
-        numberOfDays = range.formatted(.components(style: .wide, fields: [.day]))
+        numberOfDays = range.formatted(.components(style: .wide, fields: [.day]).locale(Locale(languageRegion: .russia)))
     }
     
     @IBAction func resaltButtonTapped() {
-        infoLabel.text = "Ты прожил уже \(numberOfDays) дней"
+        infoLabel.text = "Ты прожил уже \(numberOfDays)"
     }
 }
 

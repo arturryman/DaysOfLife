@@ -30,6 +30,7 @@
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="6LH-dp-ewl">
                                 <rect key="frame" x="55" y="266" width="320" height="216"/>
+                                <locale key="locale" localeIdentifier="ru"/>
                                 <connections>
                                     <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="UdM-WM-Qf1"/>
                                 </connections>
